@@ -300,7 +300,7 @@ class RetsHttpClient:
         }
 
         if self._user_agent_password:
-            request_headers['Authorization'] = self._rets_ua_authorization()
+            request_headers['RETS-UA-Authorization'] = self._rets_ua_authorization()
 
         if self._use_get_method:
             if payload:
